@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Bad Ending</title>
+
+<style>
+
+   body {
+	background-image: url(outsidecasino.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	background-size: 1280px, 780px;
+   	left: 0px;
+   	top: 0px;
+   	color: white;
+   }
+   
+	#end {
+   position: absolute;
+   top: 0px;
+   left: 500px;
+   width: 1280px;
+   color: white;
+   font-size: 60px;
+   z-index: 2;
+   }
+   
+    #blocked {
+	position: absolute;
+	left: 715px;
+	top: 530px;
+	width: 200px;
+	height: 190px;
+	color: black;
+	font-size: 30px;
+   }
+
+#guards
+{
+position: fixed;
+bottom: 0%;
+left: -10%;
+z-index: 1;
+}
+
+</style>
+<script>
+
+
+alert("You've been cheating. Listening to other people's advice")
+alert("Give us all you have")
+
+function blocked(element){
+  
+	var theElement = document.getElementById(element);
+	var newContent = "<br> <br><br> &nbsp&nbsp&nbsp Play again?";
+
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+</script>
+</head>
+
+<body>
+
+<h1 id="end"> THE BAD ENDING </h1>
+
+<a href="../Main Page/casino.html" onmouseover="blocked('blocked'); return true;">
+
+<div id="blocked"> </div>
+
+</a>
+
+<div id="guards">
+
+<img  src="guards.png" width="1280" height="824" </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Scoreboard</title>
+
+<style>
+
+     body {
+	background-image: url(background.png);
+	background-repeat: no-repeat;
+	position: fixed;
+	background-size: 1200px,200px;
+	background-color: #006400;
+	font-size: 30px;
+	color: red;
+}
+   
+   #scores{
+   position: absolute;
+   top: 200px;
+   left: 100px;
+   }
+   
+    #scores2{
+   position: absolute;
+   top: 250px;
+   left: 100px;
+   }
+   
+    #scores3{
+   position: absolute;
+   top: 300px;
+   left: 100px;
+   }
+   
+    #scores4{
+   position: absolute;
+   top: 400px;
+   left: 100px;
+   }
+   
+    #scores5{
+   position: absolute;
+   top: 500px;
+   left: 100px;
+   }
+   
+    #scores6{
+   position: absolute;
+   top: 600px;
+   left: 100px;
+   }
+   
+    #scores7{
+   position: absolute;
+   top: 650px;
+   left: 100px;
+   }
+   
+    #scores8{
+   position: absolute;
+   top: 550px;
+   left: 100px;
+   }
+   
+    #scores9{
+   position: absolute;
+   top: 450px;
+   left: 100px;
+   }
+   
+    #scores10{
+   position: absolute;
+   top: 350px;
+   left: 100px;
+   }
+   
+   #scores11{
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   }
+   
+   #scores12{
+   position: absolute;
+   top: 150px;
+   left: 100px;
+   }
+   
+    #exit {
+	position: absolute;
+	left: 1130px;
+	top: 0px;
+   }
+	
+
+
+
+</style>
+<script>
+
+
+function randInt(low,high) {
+	return Math.floor(Math.random()*(high-low+1)+low);
+}
+
+
+function scores(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+
+function scores2(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+
+function scores3(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+
+function scores4(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+
+function scores5(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores6(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores7(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores8(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores9(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores10(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+function scores11(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} function scores12(element){
+
+  
+	var t = randInt(1,6);
+	
+	var theElement = document.getElementById(element); 
+	var newContent = "";  
+	
+	if (t == 1) { 
+		newContent = " Blackjack = -50$, -50$, -30$, -40$, -10$";
+		}
+	else if (t == 2) {
+		newContent = "Cup game = -30$, -50$, -50$, -20$, -20$, -20$";
+		}
+	else if (t == 3) {
+		newContent = "Slot game= -30$, -30$, -30$, -10$, -10$, -10$, -10$";
+		}
+	else if (t == 4) {
+		newContent = " Blackjack = -30$, -30$, -40$, -30$";
+		}
+	else if (t == 5) {
+		newContent = "Cup game = -20$, -30$, -40$, -10$, -50$";
+		}
+	else if (t == 6) {
+		newContent = "Slot game= -10$, -10$, -10$, -10$, -10$, -20$, -20$";
+		}
+	
+	
+	theElement.innerHTML = newContent;
+	
+} 
+
+
+</script>
+
+</head>
+
+<body onload="scores('scores'); scores2('scores2'); scores3('scores3'); scores4('scores4'); scores5('scores5'); scores6('scores6'); scores7('scores7'); scores8('scores8'); scores9('scores9'); scores10('scores10');scores11('scores11'); scores12('scores12');">
+
+<a href="../Main Page/casino.html"> <img id="exit" src="exit.png" alt="An exit sign" height="150" width="150"> </a>
+
+
+
+<div id="scores"> </div>
+<div id="scores2"> </div>
+<div id="scores3"> </div>
+<div id="scores4"> </div>
+<div id="scores5"> </div>
+<div id="scores6"> </div>
+<div id="scores7"> </div>
+<div id="scores8"> </div>
+<div id="scores9"> </div>
+<div id="scores10"> </div>
+<div id="scores11"> </div>
+<div id="scores12"> </div>
+
+<img src="goldframe.png" alt="A gold frame" width="1200" height="780">
+
+
+
+</body>
+</html>

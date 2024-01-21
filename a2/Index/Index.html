@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>WELCOME TO THE CASINO</title>
+
+<style>
+
+   body {
+	background-image: url(outsidecasino.jpg);
+	background-repeat: no-repeat;
+	position: fixed;
+	background-size: 1280px, 780px;
+   	left: 0px;
+   	top: 0px;
+   	color: white;
+   }
+
+ #casino {
+	position: absolute;
+	left: 715px;
+	top: 530px;
+	width: 200px;
+	height: 190px;
+   }
+   
+    #statement {
+	position: absolute;
+	left: 505px;
+	top: 200px;
+	width: 530px;
+	height: 200px;
+   }
+
+
+</style>
+<script>
+
+alert("Hello! Welcome to the casino!");
+
+
+var usersname = prompt("What is your name?");
+while (usersname == "" || usersname == " " || usersname == null) {
+	var usersname = prompt ("Tell me your name.");
+}
+
+alert("Hello " + usersname + ". " + "Come in...");
+
+
+</script>
+
+</head>
+
+<body onload= "name()";>
+
+<a id="casino" href="../Main Page/casino.html"> </a>
+
+<a id="statement" href="../Statement/Statement.html"> </a>
+
+
+</body>
+</html>

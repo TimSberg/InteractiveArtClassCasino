@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>	bankegg</title>
+
+
+<style>
+
+ 
+    body {
+	background-image: url(bankegg.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+	background-size:800px;
+	background-position: top;
+	background-color: grey;
+   }
+  
+       #exit {
+	position: absolute;
+	left: 30px;
+	top: 0px;
+   }
+
+   #egg {
+   position: absolute;
+   top: 600px;
+   left: 600px;
+   }
+
+</style>
+
+
+</head>
+
+
+
+<a href="../Main Page/casino.html"> <img id="exit" src="exit.png" alt="An exit sign" height="150" width="150"> </a>
+
+<div id="egg"> <button onclick ="lies()"></button> </div>
+
+</body>
+<script>
+
+
+
+function lies() {
+var q = prompt("Look into the back of the bank?");
+
+var drunk = "";
+
+if (q == " " || q == "" || q == null) {
+  	drunk= "No one is looking, do something!";
+  }
+else if (q == "yes" || q == "Yes") {
+		
+  	drunk = "The bank machine has no cash ;(";
+  }
+else if (q == "no" || q == "No") {
+  	drunk = "There are no rewards for good behaviour here";
+  }
+else {
+  	alert("Maybe you should think again");
+  	drunk = "You notice people starting to watch you...";
+  }
+	
+alert(drunk);
+}
+</script>
+</html>

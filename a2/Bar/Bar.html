@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>	Bar </title>
+
+
+<style>
+
+   
+   
+   body {
+	background-image: url(bar.jpg);
+	position: absolute;
+   	left: 0px;
+   	top: 0px;
+   	color: #FF0000;
+   }
+    #buttonone {
+	position: absolute;
+	left: 320px;
+	top: 230px;
+	z-index =1;
+   }
+   
+   #bubble {
+	position: absolute;
+	left: 130px;
+	top: 200px;
+	width: 220px;
+	height: 200px;
+   }
+   
+   
+  #one {
+	position: absolute;
+	left: -50px;
+	top: 175px;
+z-index = 0;
+   }
+   
+    #exit {
+	position: absolute;
+	left: 30px;
+	top: 0px;
+   }
+
+</style>
+<script>
+
+
+
+function drink(){
+var q = prompt("Would you care for a drink?", "yes/no");
+
+var drunk = "";
+
+if (q == " " || q == "" || q == null) {
+  	drunk= "I see you're shy! Maybe a drink will loosen you up";
+  }
+else if (q == "no" || q == "No") {
+		
+  	drunk = "That's probably a good answer";
+  }
+else if (q == "yes" || q == "Yes") {
+  	drunk = "We are not liable if you find poison in your drink...";
+  }
+else {
+  	alert("Are you already drunk?");
+  	drunk = "Maybe you should go back to the casino now...";
+  }
+	
+alert(drunk);
+}
+</script>
+
+</head>
+
+
+
+
+<div id="bubble"> <img src="chatbubble.png" alt="A talking bubble" height="100" width="450" > </div>
+
+<div id="buttonone"> <button onclick="drink();"> Talk </button> </div>
+		
+<div id="one"> <img src="dealer.png" alt="the bartender" height="350" width="358" /> </div>
+
+
+</a>	
+<a href="../Main Page/casino.html"> <img id="exit" src="exit.png" alt="An exit sign" height="150" width="150"> </a>
+
+
+</body>
+</html>

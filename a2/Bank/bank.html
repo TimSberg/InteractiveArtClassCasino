@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>	bank</title>
+
+
+<style>
+
+   
+   
+   body {
+	background-image: url(bank.jpg);
+	background-repeat: no-repeat;
+	position: absolute;
+   }
+  
+       #exit {
+	position: absolute;
+	left: 60px;
+	top: 0px;
+   }
+
+ #buttonone {
+	position: absolute;
+	left: 550px;
+	top: 380px;
+   }
+
+   #egg {
+   position: absolute;
+   top: 740px;
+   left: 600px;
+   }
+
+</style>
+
+
+</head>
+
+
+
+<div id="buttonone"> <button onclick="pressbank();"> pinpad </button> </div>
+
+</a>	
+<a href="../Main Page/casino.html"> <img id="exit" src="exit.png" alt="An exit sign" height="150" width="150"> </a>
+
+<div id="egg"> <button onclick ="window.location.href='../Bankegg/bankegg.html'"></button> </div>
+
+</body>
+<script>
+
+
+
+function pressbank() {
+var q = prompt("Would you like to withdraw or deposit?");
+
+var drunk = "";
+
+if (q == " " || q == "" || q == null) {
+  	drunk= "Well you can't just stand here, think about it!";
+  }
+else if (q == "withdrawl" || q == "Withdrawl") {
+		
+  	drunk = "You've spent all your savings already";
+  }
+else if (q == "deposit" || q == "Deposit") {
+  	drunk = "You get a card error";
+  }
+else {
+  	alert("Are you already drunk?");
+  	drunk = "Maybe you should go back to the casino now...";
+  }
+	
+alert(drunk);
+}
+</script>
+</html>
